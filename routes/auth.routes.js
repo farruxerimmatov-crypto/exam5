@@ -3,6 +3,7 @@ const { registr, login, resendOtp, forgotPassword, verify, logout} = require("..
 const refreshToken = require("../middleware/refresh-token")
 const authValidatorMidlleware = require("../middleware/auth.-validator.midlleware")
 
+
 const authRoutes = Router()
 
 authRoutes.post("/register", authValidatorMidlleware,  registr)
