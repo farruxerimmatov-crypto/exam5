@@ -15,7 +15,8 @@ const category = new Schema(
     },
     admin_id: {
       type: Schema.ObjectId,
-      ref: "Auth"
+      ref: "Auth",
+      required:true
     }
    
   },
